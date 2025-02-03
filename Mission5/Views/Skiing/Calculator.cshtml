@@ -1,0 +1,60 @@
+﻿@{
+	ViewData["Title"] = "Skiing Lesson Calculator";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery -->
+</head>
+<body>
+    <header>
+        <h1>Skiing Lesson Price Calculator</h1>
+        <nav>
+            <!--button to go home-->
+            <a href="@Url.Action("Index", "Skiing")">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <!--calculation section-->
+        <section>
+            <h2 class="dark-blue-heading">Calculate Your Skiing Lesson Cost</h2>
+            <p>Enter how many hours of skiing lessons you would want:</p>
+
+            <label for="hours">Number of Hours:</label>
+            <input type="number" id="hours" min="1" required>
+            <br>
+
+            <!--35 is hard coded-->
+            <label for="rate">Hourly Rate ($):</label>
+            <input type="text" id="rate" value="35" readonly> <!-- Non-editable box -->
+            <br>
+
+            <button id="calculate">Calculate Total Cost</button>
+            <br>
+
+            <label for="total">Total Cost ($):</label>
+            <input type="text" id="total" readonly>
+        </section>
+    </main>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer>
+        <p>&copy; My Ski Page: 2025 | Created by Summer Sampson</p>
+    </footer>
+
+    <!--link to jquery-->
+    <script src="~/js/calculator.js"></script>
+</body>
+</html>

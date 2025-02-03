@@ -1,0 +1,115 @@
+/* === Global Styles === */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    background-color: #e6f7ff; /* Light blue background */
+    color: #003366; /* Dark blue text */
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Allows footer to stay at bottom */
+}
+
+/* === Header === */
+header {
+    background-color: #003366; /* Dark blue */
+    color: white; /* White text for visibility */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* === Navigation Bar === */
+nav {
+    text-align: center;
+    background-color: #003366;
+    padding: 15px;
+}
+
+    nav a {
+        color: white; /* White text */
+        text-decoration: none;
+        font-size: 18px;
+        margin: 10px;
+        padding: 10px 15px;
+        background-color: #00509e;
+        border-radius: 5px;
+    }
+
+        nav a:hover {
+            background-color: #0073e6;
+        }
+
+/* === Main Content === */
+main {
+    flex: 1; /* Pushes footer down */
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* === Form Styles === */
+input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #00509e;
+}
+
+input {
+    background-color: white;
+    color: #003366;
+}
+
+button {
+    background-color: #008000; /* Green button */
+    color: white; /* White text */
+    border: none;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #006400; /* Darker green on hover */
+    }
+
+/* === Footer (Hugs Bottom & Full Width Without Overlap) === */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: auto; /* Pushes footer to bottom without overlap */
+    position: relative; /* Prevents it from covering content */
+}
+
+.dark-blue-heading {
+    color: #003366; /* Dark blue */
+}
+
+/* === Responsive Design (Mobile-Friendly) === */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    header {
+        font-size: 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px auto;
+        width: 80%;
+    }
+}

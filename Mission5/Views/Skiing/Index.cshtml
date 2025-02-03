@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "My Hobby: Skiing";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Summer's Skiing</h1>
+        <!--heading-->
+        <h2>Hi! My name is Summer, and one of my hobbies that I'm passionate about is skiing! I would love to teach you lessons!</h2>
+        <nav>
+            <!--link to the other calculator page-->
+            <a href="@Url.Action("Calculator", "Skiing")">Pricing Calculator for Lessons</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <!--intro paragraphs-->
+            <h2 class="dark-blue-heading">How I got into skiing:</h2>
+            <p>
+                When I was growing up, I went skiing a couple of times but often wasn’t a huge fan. I found it hard to stay at a comfortable temperature, and I got stressed out easily.
+                My parents really got into skiing when I was in high school, but by then, I was old enough that I would have had to buy my own gear and pass, which didn’t seem worth it to me.
+            </p>
+
+            <p>
+                I started dating my now-husband, Zak, in 2021, and he had been skiing since he was a little kid. In the winter of 2023/2024, he wanted me to learn so I could go with his family.
+                Luckily for me, he bought all the gear I needed, along with my $1,000 pass. He also taught me very patiently.
+                I would say that 75% of the time, I wasn’t having fun because I was either tired, cold, or stressed about running into people or things.
+                But this year, it has been so much fun! Now that I don’t need to focus on every step at once, it's easier for me to enjoy what I’m doing and focus on getting better.
+                I’m so glad Zak encouraged me to start skiing.
+            </p>
+
+            <img src="~/images/skiing2.jpg" alt="Skiing on the slopes" width="225">
+            <img src="~/images/skiing1.jpg" alt="Skiing adventure" width="400">
+            <img src="~/images/skiing3.jpg" alt="Skiing adventure" width="225">
+            <br />
+            <h2>                               </h2>
+            <h2 class="dark-blue-heading">Why I Love It:</h2>
+
+            <p>
+                One of my favorite things about skiing is the experience around the actual skiing. I love my cute snow clothes, and it’s fun shopping for ski gear.
+                I’ve also found that it’s so nice to get outside in the winter because, without skiing, I rarely want to be outside for hours.
+                The views are another huge perk of skiing—it's rare for me to be in the mountains looking down. I also love riding the lift up because it feels like a little rollercoaster.
+            </p>
+
+            <p>
+                Skiing has also been such a fun way to bond with Zak because he is insanely good and such a patient teacher.
+                I don’t think I could have had anyone else teach me because I would probably have gotten too frustrated.
+                Luckily for me, Zak knows the perfect balance of when to push me and when to say we can go sit in the lodge.
+                It has also been so fun traveling with Zak’s family to go skiing. A couple of weeks ago, we went to Jackson Hole, and it was such a fun trip!
+            </p>
+
+        </section>
+    </main>
+
+    <!--my footer-->
+    <footer>
+        <p>&copy; My Ski Page: 2025 | Created by Summer Sampson</p>
+    </footer>
+
+</body>
+</html>
